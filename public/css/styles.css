@@ -1,0 +1,26 @@
+header {
+    background-color: #EAC926;
+    color: black;
+}
+
+header ul li{
+    list-style: none;
+    text-align: left;
+}
+
+.sugerencia{
+    text-align: center;
+}
+
+header ul{
+    padding: 0;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+header button{
+    text-align: center;
+}
