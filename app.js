@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3030
 app.use(express.static(path.join(__dirname, "public")))
 
 app.listen(PORT, () =>  {
-    console.log("Servidor Corriendo Mercado Liebre");
+    console.log(`Servidor Corriendo en el puerto ${PORT}`);
 })
 
 app.get("/", (req, res) => {
