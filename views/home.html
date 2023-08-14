@@ -16,37 +16,44 @@
 <body>
     <header>
         <div class="top-header">
-            <div class="top-header-mobile">
-            <img src="/images/logo-mercado-liebre.svg" id="logo">
-            <input class="buscador" type="text" placeholder="ingrese su producto...">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-                <p class="sugerencia">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                Comprá en cuotas y sin tarjeta de crédito
-                </p>
+            <a id="logo" href="/"><img src="/images/logo-mercado-liebre.svg" ></a>
+
+            <form class="buscador" action="" method="get">
+                <input class="buscador-texto" type="text" placeholder="ingrese su producto...">
+                <button class="buscador-boton" type="submit"><i class="fa-solid fa-magnifying-glass buscador-boton"></i></button>
+            </form>
+
+            <p class="sugerencia">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+            </p>
         </div>
+
         <div class="burger-menu-box">
             <button class="burger-menu"><i class="fas fa-bars"></i></button>
-            </div>
+        </div>
+
         <nav class="navbar-header">
-        <ul class="lista lista-nav">
-            <li><a href="">Ofertas</a></li>
-            <li><a href="">Tiendas Oficiales</a></li>
-            <li><a href="">Vender</a></li>
-            <li><a href="">Ayuda</a></li>
-        </ul>
-        <ul class="lista lista-login">
-            <li><a href="">Creá tu Cuenta </a><i class="fa-solid fa-id-card"></i></li>
-            <li><a href="">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
-            <li><a href="">Mis Compras </a><i class="fa-solid fa-cart-shopping"></i></li>
-        </ul>
-            </nav>
+            <ul class="lista lista-nav">
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+
+            <ul class="lista lista-login">
+                <li><a href="/register.html">Creá tu Cuenta </a><i class="fa-solid fa-id-card"></i></li>
+                <li><a href="/login.html">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="">Mis Compras </a><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav>
+
     </header>
         <img src="/images/img-home-banner.jpg" alt="banner" id="banner">
     <main>
         <section class="seccion-ultimas-vistas">
             <h3 class="seccion-titulo">Basado en tu última visita</h3>
+            <div class="productos">
             <article>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="">
                 <div class="descripcion">
@@ -91,9 +98,11 @@
                 <p class="producto">Samsung Galaxy S10</p>
                 </div>
             </article>
+            </div>
         </section>
-        <section class="seccion-ofertas">
+        <section class="seccion-ofertas" id="ofertas">
             <h3 class="seccion-titulo">Ofertas</h3>
+            <div class="productos">
             <article>
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="">
                 <div class="descripcion">
@@ -116,28 +125,47 @@
                 <p class="producto">SmartTv Samsung 43"</p>
                 </div>
             </article>
+            <article>
+                <img src="/images/img-macbook-pro-2019.jpg" alt="">
+                <div class="descripcion">
+                <div class="precio-y-descuento">
+                <p class="precio">$230.000</p>
+                <p class="descuento">20% OFF</p>
+                </div>
+                <div class="icono-envio"><i class="fa-solid fa-truck"></i></div>
+                <p class="producto">MacBook Pro 2019</p>
+                </div>
+            </article>
+            </div>
         </section>
     </main>
     <footer>
-        <section class="sugerencia-pago-tarjeta">
-            <i class="fa-solid fa-credit-card"></i>
-            <h3 class="sugerencia-titulo">Pagá con tarjeta o en efectivo</h3>
-            <p class="sugerencia-parrafo">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section class="sugerencia-envio-gratis">
-            <i class="fa-solid fa-gift"></i>
-            <h3 class="sugerencia-titulo">Envío gratis desde $ 2.500</h3>
-            <p class="sugerencia-parrafo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-        <section class="sugerencia-seguridad">
-            <i class="fa-solid fa-user-shield"></i>
-            <h3 class="sugerencia-titulo">Seguridad, de principio a fin</h3>
-            <p class="sugerencia-parrafo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
-        </section>
-        <h4 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+        <div class="sugerencias-footer">
+            <section class="sugerencia-pago-tarjeta">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3 class="sugerencia-titulo">Pagá con tarjeta o en efectivo</h3>
+                <p class="sugerencia-parrafo">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+
+            <section class="sugerencia-envio-gratis">
+                <i class="fa-solid fa-gift"></i>
+                <h3 class="sugerencia-titulo">Envío gratis desde $ 2.500</h3>
+                <p class="sugerencia-parrafo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+
+            <section class="sugerencia-seguridad">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3 class="sugerencia-titulo">Seguridad, de principio a fin</h3>
+                <p class="sugerencia-parrafo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+        </div>
+
+        <div class="copyright-box">
+            <h4 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+        </div>
     </footer>
 </body>
 
