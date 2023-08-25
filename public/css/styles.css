@@ -106,6 +106,10 @@ main section article img{
 
 }
 
+main .seccion-ofertas{
+    padding-bottom: 10px;
+}
+
 main .seccion-titulo{
     font-size: 24px;
     padding: 10px;
@@ -253,7 +257,7 @@ footer section .sugerencia-parrafo{
 
     main .precio-y-descuento{
         width: 100%;
-        padding: 15px 0px;
+        padding: 15px 0px 0px;
         justify-content: space-between;
     }
     main .descuento{
@@ -266,6 +270,7 @@ footer section .sugerencia-parrafo{
     main .producto{
         display: block;
         color: white;
+        font-size: 8px;
     }
     main section {
         display: flex;
@@ -334,9 +339,9 @@ footer section .sugerencia-parrafo{
     }
     main section article:hover{
         .producto{
-                
+                font-size: 16px;
                 color: #666;
-                padding: 10px 0px;
+                padding: 25px 0px 10px;
         }
         .icono-envio{
             transform: rotateZ(-0.25turn);

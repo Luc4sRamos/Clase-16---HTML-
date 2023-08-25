@@ -75,6 +75,12 @@ main{
     background-color: #ebebeb;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-log-reg{
+    margin: 20px 0;
+
 }
 .register-form{
     padding: 10px;
@@ -257,8 +263,12 @@ footer section .sugerencia-parrafo{
     main{
         height: 50%;
     }
+    .title-log-reg{
+        margin: 30px 0;
+        
+    }
     .register-form{
-        margin: 8% 0px;
+        margin: 15px 0px 8%;
         max-width: 1000px;
     }
         
